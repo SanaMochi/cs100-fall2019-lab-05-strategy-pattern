@@ -6,6 +6,7 @@
 #include "op_test.hpp"
 #include "list.hpp"
 #include "container.hpp"
+#include "sort.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
@@ -25,7 +26,7 @@ TEST(ListContainerTestSet, SwapTest) {
     ASSERT_EQ(test_container->size(), 1);
     EXPECT_EQ(test_container->at(0)->evaluate(), 7);
 }
-/*
+
 TEST(SortTestSet, BubbleSortTest) {
     Op* seven = new Op(7);
     Op* four = new Op(4);
@@ -49,7 +50,7 @@ TEST(SortTestSet, BubbleSortTest) {
     EXPECT_EQ(container->at(1)->evaluate(), 5);
     EXPECT_EQ(container->at(2)->evaluate(), 4);
 
-    container->set_sort_function(new bubble_sort());
+    container->set_sort_function(new Bubble_sort());
     container->sort();
 
     ASSERT_EQ(container->size(), 3);
@@ -57,5 +58,5 @@ TEST(SortTestSet, BubbleSortTest) {
     EXPECT_EQ(container->at(1)->evaluate(), 5);
     EXPECT_EQ(container->at(2)->evaluate(), 28);
 }
-*/
+
 #endif //__UNIT_TEST_HPP__

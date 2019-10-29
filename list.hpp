@@ -1,7 +1,7 @@
 #ifndef _LIST_HPP_
 #define _LIST_HPP_
 
-
+#include "base.hpp"
 #include "container.hpp"
 #include "sort.hpp"
 #include "list.hpp"
@@ -17,16 +17,22 @@ class List : public Container {
 		List() {} ;
         //List(Sort* function) : sort_function(function) { };
 
+        /* Non Virtual Functions */
+        void set_sort_function(Sort* sort_function) {
+			// set the type of sorting algorithm
+			this->sort_function = sort_function;
+		}
+
         /* Pure Virtual Functions */
         // push the top pointer of the tree into container
         void add_element(Base* element) {
-			list1.push_front(element);
+			list1.push_back(element);
 		}
 		
         // iterate through trees and output the expressions (use stringify())
         void print() {
 			for (list <Base*> :: iterator it = list1.begin(); it != list1.end(); it++) {
-				(*it)->stringify();
+				cout << (*it)->stringify() << " ";
 			}
 		}		
 		
@@ -34,9 +40,10 @@ class List : public Container {
         void sort() {
 			set_sort_function(sort_function);
 			if (sort_function == nullptr) {
+				throw "sort_function is nullptr";
 				return;
 			}
-			sort(list1);
+			sort_function->sort(this);
 		}
 
         /* Essentially the only functions needed to sort */

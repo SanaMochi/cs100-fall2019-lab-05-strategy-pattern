@@ -3,16 +3,15 @@
 
 #include "sort.hpp"
 #include "base.hpp"
-#include "container.hpp"
-#include "list.hpp"
+//#include "container.hpp"
 
-class bubble_sort : public Sort {
+class Bubble_sort : public Sort {
     public:
         /* Constructors */
-        bubble_sort();
+        //Bubble_sort();
 
         /* Pure Virtual Functions */
-        virtual void sort(Container* container) {
+        void sort(Container* container) {
 		    int i, j;  
 		    int n = container.size()-1;
 			for (i = 0; i < n; i++) {

@@ -4,8 +4,8 @@
 #include "sort.hpp"
 #include "base.hpp"
 
-class Sort;
-class Base;
+//class Sort;
+//class Base;
 
 class Container {
     protected:

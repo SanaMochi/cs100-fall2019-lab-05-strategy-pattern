@@ -1,10 +1,11 @@
 #ifndef __SORT_HPP__
 #define __SORT_HPP__
 
+#include "base.hpp"
 #include "container.hpp"
-#include "bubble_sort.hpp"
+//#include "bubble_sort.hpp"
 
-class Container;
+//class Container;
 
 class Sort {
     public:
