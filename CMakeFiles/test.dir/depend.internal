@@ -11,9 +11,11 @@ CMakeFiles/test.dir/test.cpp.o
  /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/container_test.hpp
  /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/op.hpp
  /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/rand.hpp
+ /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/selectionSort.hpp
  /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/sort.hpp
  /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/sub.hpp
  /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/test.cpp
+ /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/vector.hpp
  googletest/googletest/include/gtest/gtest-death-test.h
  googletest/googletest/include/gtest/gtest-matchers.h
  googletest/googletest/include/gtest/gtest-message.h

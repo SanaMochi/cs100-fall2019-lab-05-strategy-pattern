@@ -73,6 +73,12 @@ rand.hpp
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/rand.hpp
 container.hpp
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/container.hpp
+vector.hpp
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/vector.hpp
+selectionSort.hpp
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/selectionSort.hpp
+sort.hpp
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/sort.hpp
 
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/op.hpp
 base.hpp
@@ -83,6 +89,12 @@ base.hpp
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/base.hpp
 stdlib.h
 -
+
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/selectionSort.hpp
+base.hpp
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/base.hpp
+sort.hpp
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/sort.hpp
 
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/sort.hpp
 container.hpp
@@ -97,6 +109,12 @@ gtest/gtest.h
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/gtest/gtest.h
 container_test.hpp
 /home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/container_test.hpp
+
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/vector.hpp
+vector
+-
+container.hpp
+/home/csmajs/mwdow001/lab-05-strategy-pattern-lab_5/container.hpp
 
 googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

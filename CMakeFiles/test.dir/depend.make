@@ -10,9 +10,11 @@ CMakeFiles/test.dir/test.cpp.o: container.hpp
 CMakeFiles/test.dir/test.cpp.o: container_test.hpp
 CMakeFiles/test.dir/test.cpp.o: op.hpp
 CMakeFiles/test.dir/test.cpp.o: rand.hpp
+CMakeFiles/test.dir/test.cpp.o: selectionSort.hpp
 CMakeFiles/test.dir/test.cpp.o: sort.hpp
 CMakeFiles/test.dir/test.cpp.o: sub.hpp
 CMakeFiles/test.dir/test.cpp.o: test.cpp
+CMakeFiles/test.dir/test.cpp.o: vector.hpp
 CMakeFiles/test.dir/test.cpp.o: googletest/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/test.dir/test.cpp.o: googletest/googletest/include/gtest/gtest-matchers.h
 CMakeFiles/test.dir/test.cpp.o: googletest/googletest/include/gtest/gtest-message.h
