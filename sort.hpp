@@ -2,6 +2,7 @@
 #define __SORT_HPP__
 
 #include "container.hpp"
+#include "bubble_sort.hpp"
 
 class Container;
 
