@@ -1,0 +1,22 @@
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/sort.hpp:16:27: error: ‘Container’ has not been declared
+         virtual void sort(Container* container) = 0;
+                           ^
+In file included from /home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/unit_tests.cpp:7:0:
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/list.hpp: In member function ‘virtual void List::sort()’:
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/list.hpp:46:28: error: no matching function for call to ‘Sort::sort(List* const)’
+    sort_function->sort(this);
+                            ^
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/list.hpp:46:28: note: candidate is:
+In file included from /home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/container.hpp:4:0,
+                 from /home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/list.hpp:5,
+                 from /home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/unit_tests.cpp:7:
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/sort.hpp:16:22: note: virtual void Sort::sort(int*)
+         virtual void sort(Container* container) = 0;
+                      ^
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/sort.hpp:16:22: note:   no known conversion for argument 1 from ‘List* const’ to ‘int*’
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/unit_tests.cpp: In member function ‘virtual void SortTestSet_BubbleSortTest_Test::TestBody()’:
+/home/csmajs/smohi002/lab-05-strategy-pattern-lab_5/unit_tests.cpp:53:38: error: expected type-specifier before ‘Bubble_sort’
+     container->set_sort_function(new Bubble_sort());
+                                      ^
+make[2]: *** [CMakeFiles/test.dir/unit_tests.cpp.o] Error 1
+make[1]: *** [CMakeFiles/test.dir/all] Error 2
