@@ -3,9 +3,19 @@
 
 #include "gtest/gtest.h"
 
-#include "op_test.hpp"
+#include "base.hpp"
+#include "op.hpp"
+#include "Mult.hpp"
+#include "Div.hpp"
+#include "Pow.hpp"
+#include "add.hpp"
+#include "sub.hpp"
+#include "rand.hpp"
+#include "container.hpp"
+#include "sort.hpp"
 #include "list.hpp"
 #include "container.hpp"
+#include "bubble_sort.hpp"
 #include "sort.hpp"
 
 int main(int argc, char **argv) {
@@ -16,7 +26,7 @@ int main(int argc, char **argv) {
 TEST(ListContainerTestSet, SwapTest) {
     // Setup the elements under test
     Op* seven = new Op(7);
-    List* test_container = new List();
+    ListContainer* test_container = new ListContainer();
 
     // Exercise some functionality of hte test elements
     test_container->add_element(seven);
@@ -40,7 +50,7 @@ TEST(SortTestSet, BubbleSortTest) {
     Op* six = new Op(6);
     Sub* TreeC = new Sub(ten, six);
 
-    List* container = new List();
+    ListContainer* container = new ListContainer();
     container->add_element(TreeA);
     container->add_element(TreeB);
     container->add_element(TreeC);
@@ -50,7 +60,7 @@ TEST(SortTestSet, BubbleSortTest) {
     EXPECT_EQ(container->at(1)->evaluate(), 5);
     EXPECT_EQ(container->at(2)->evaluate(), 4);
 
-    container->set_sort_function(new Bubble_sort());
+    container->set_sort_function(new BubbleSort());
     container->sort();
 
     ASSERT_EQ(container->size(), 3);

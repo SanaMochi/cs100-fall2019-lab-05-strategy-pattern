@@ -1,22 +1,20 @@
 #ifndef _LIST_HPP_
 #define _LIST_HPP_
 
-#include "base.hpp"
+//#include "base.hpp"
 #include "container.hpp"
-#include "sort.hpp"
-#include "list.hpp"
+//#include "sort.hpp"
 #include <list>
 #include <iterator>
 
 using namespace std;
 
-class List : public Container {
-    list<Base*> list1;
+class ListContainer : public Container {
+    protected:
+		Sort* sort_function;
+		list<Base*> list1;
+		
     public:
-    
-		List() {} ;
-        //List(Sort* function) : sort_function(function) { };
-
         /* Non Virtual Functions */
         void set_sort_function(Sort* sort_function) {
 			// set the type of sorting algorithm
@@ -32,13 +30,13 @@ class List : public Container {
         // iterate through trees and output the expressions (use stringify())
         void print() {
 			for (list <Base*> :: iterator it = list1.begin(); it != list1.end(); it++) {
-				cout << (*it)->stringify() << " ";
+				cout << (*it)->stringify();
 			}
 		}		
 		
         // calls on the previously set sorting-algorithm. Checks if sort_function is not null, throw exception if otherwise
         void sort() {
-			set_sort_function(sort_function);
+			//set_sort_function(sort_function);
 			if (sort_function == nullptr) {
 				throw "sort_function is nullptr";
 				return;
@@ -56,7 +54,7 @@ class List : public Container {
 			
 			Base* temp;
 			list <Base*> :: iterator it = list1.begin();
-			for (int index = 0; i < index; index++) {
+			for (int index = 0; index < i; index++) {
 				if (i == index) {
 					temp = *it;
 				}
@@ -64,7 +62,7 @@ class List : public Container {
 			}			
 			
 			list <Base*> :: iterator it2 = list1.begin();
-			for (int index2 = 0; j < index2; index2++) {
+			for (int index2 = 0; index2 < j; index2++) {
 				if (j == index2) {
 					*it = *it2;
 					*it2 = temp;
@@ -79,7 +77,7 @@ class List : public Container {
 				throw "index out of bounds";
 			}
 			list <Base*> :: iterator it = list1.begin();
-			for (int index = 0; i < index; index++) {
+			for (int index = 0; index < i; index++) {
 				if (i == index) {
 					return *it;
 				}
