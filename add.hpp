@@ -12,4 +12,4 @@ class Add : public Base {
         virtual std::string stringify() { return std::to_string(Oprand1->evaluate()) + " + " + std::to_string(Oprand2->evaluate()); }
 };
 
-#endif //__RAND_HPP__
+#endif //__ADD_HPP__

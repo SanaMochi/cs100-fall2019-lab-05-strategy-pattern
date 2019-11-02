@@ -2,7 +2,14 @@
 #define __BASE_HPP__
 
 #include <string>
-
+/*
+#include "add.hpp"
+#include "Div.hpp"
+#include "Mult.hpp"
+#include "Pow.hpp"
+#include "rand.hpp"
+#include "sub.hpp"
+*/
 class Base {
     public:
         /* Constructors */

@@ -8,8 +8,9 @@
 //#include "rand.hpp"
 #include "container.hpp"
 #include "vector.hpp"
-#include "list.hpp"
 #include "sort.hpp"
+#include "selectionSort.hpp"
+#include "list.hpp"
 #include "Bubble_sort.hpp"
 #include <iostream>
 
