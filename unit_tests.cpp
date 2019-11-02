@@ -23,18 +23,40 @@ int main(int argc, char **argv) {
   return RUN_ALL_TESTS();
 }
 
-TEST(ListContainerTestSet, SwapTest) {
+TEST(ListContainerTestSet, BasicTest) {
     // Setup the elements under test
     Op* seven = new Op(7);
     ListContainer* test_container = new ListContainer();
 
-    // Exercise some functionality of hte test elements
+    // Exercise some functionality of the test elements
     test_container->add_element(seven);
 
     // Assert that the container has at least a single element
     // otherwise we are likely to cause a segfault when accessing
     ASSERT_EQ(test_container->size(), 1);
     EXPECT_EQ(test_container->at(0)->evaluate(), 7);
+}
+
+TEST(ListContainerTestSet, SwapTest) {
+    // Setup the elements under test
+    Op* seven = new Op(7);
+    Op* ten = new Op(10);
+    ListContainer* test_container = new ListContainer();
+
+    // Exercise some functionality of the test elements
+    test_container->add_element(seven);
+    test_container->add_element(ten);
+
+    // Assert that the container has at least a single element
+    // otherwise we are likely to cause a segfault when accessing
+    ASSERT_EQ(test_container->size(), 2);
+    EXPECT_EQ(test_container->at(0)->evaluate(), 7);
+    EXPECT_EQ(test_container->at(1)->evaluate(), 10);
+  
+    test_container->swap(0,1);
+  
+    EXPECT_EQ(test_container->at(0)->evaluate(), 10);
+    EXPECT_EQ(test_container->at(1)->evaluate(), 7);
 }
 
 TEST(SortTestSet, BubbleSortTest) {
