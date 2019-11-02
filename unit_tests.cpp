@@ -59,6 +59,25 @@ TEST(ListContainerTestSet, SwapTest) {
     EXPECT_EQ(test_container->at(1)->evaluate(), 7);
 }
 
+
+TEST(ListContainerTestSet, AtTest) {
+    // Setup the elements under test
+    Op* seven = new Op(7);
+    ListContainer* test_container = new ListContainer();
+
+    // Exercise some functionality of the test elements
+    test_container->add_element(seven);
+
+    // Assert that the container has at least a single element
+    // otherwise we are likely to cause a segfault when accessing
+  
+    test_container->at(0);
+
+    ASSERT_EQ(test_container->size(), 1);
+    EXPECT_EQ(test_container->at(0)->evaluate(), 7);
+
+}
+
 TEST(SortTestSet, BubbleSortTest) {
     Op* seven = new Op(7);
     Op* four = new Op(4);
