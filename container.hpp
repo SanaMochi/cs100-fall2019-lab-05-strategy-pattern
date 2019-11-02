@@ -19,7 +19,7 @@ class Container {
 
         /* Non Virtual Functions */
         void set_sort_function(Sort* sort_function); // set the type of sorting algorithm
-
+	
         /* Pure Virtual Functions */
         // push the top pointer of the tree into container
         virtual void add_element(Base* element) = 0;

@@ -10,6 +10,8 @@
 #include "vector.hpp"
 #include "sort.hpp"
 #include "selectionSort.hpp"
+#include "list.hpp"
+#include "Bubble_sort.hpp"
 #include <iostream>
 
 int main(){
